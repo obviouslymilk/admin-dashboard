@@ -11,7 +11,12 @@ body {
     grid-template-columns: 1fr 5fr;
     grid-template-areas: 
     "sidebar header"
-    "sidebar content";
+    "sidebar content"
+}
+
+h3, h5 {
+    margin: 0;
+    padding: 0;
 }
 
 .sidebar {
@@ -24,23 +29,100 @@ body {
     background-color: white;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    height: fit-content;
+    padding: 16px;
+}
+
+.userinfo {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 16px;
+    margin: 16px;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 1rem;
+    margin-right: 5rem;
+}
+
+.searchbar img, .notification {
+    height: 60%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: bold;
+    justify-content: right;
+    margin-right: 20%;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 48px;
+}
+
+.searchbar div {
+    height: 32px;
+    background-color: #eeeeee;
+    border-radius: 32px;
+    flex: 1;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-left: 2rem;
+}
+
+.greetings {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.control-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    align-items: center;
+    justify-content: right;
+    margin-right: 10%;
+    gap: 16px;
+}
+
+.control-buttons button {
+    background-color: #0d9488;
+    color: white;
+    border: 0;
+    padding: 0.5em;
+    border-radius: 10rem;
+    font-size: 1em;
+}
+
+.greetings img {
+    height: 80px;
 }
 
 .content {
     grid-area: content;
     background-color: bisque;
+    height: auto;
 }
 
 .logo {
     display: flex;
     align-items: center;
     justify-content: left;
-    padding-left: 2rem;
+    padding-left: 1rem;
     margin-top: 5%;
     font-size: 2rem;
     color: white;
     font-weight: 600;
-
+    font-size: max(100%, 2em);
 }
 
 .logo img {
@@ -57,7 +139,7 @@ body {
     gap: 16px;
     margin-top: 15%;
     margin-bottom: 20%;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .navigation button, .branding button {
