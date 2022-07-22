@@ -213,8 +213,30 @@ button img {
 
 .announcemens {
     grid-area: announce;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
 }
 
 .trending {
     grid-area: trending;
+}
+
+.announces {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 32px;
+}
+
+.announces div {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px lightgray solid;
+}
+
+.announces h4 {
+    padding: 0;
+    margin: 0;
 }
