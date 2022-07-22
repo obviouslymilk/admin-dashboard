@@ -211,7 +211,7 @@ button img {
     margin-top: 0.5em;
 }
 
-.announcemens {
+.announcemens, .trending {
     grid-area: announce;
     display: grid;
     grid-template-rows: 30px 1fr;
@@ -223,7 +223,25 @@ button img {
     grid-area: trending;
 }
 
-.announces {
+.tranding-user {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+    color: gray;
+    margin-bottom: 32px;
+}
+
+.tranding-user img {
+    border-radius: 50%;
+    height: 4em;
+}
+
+.tranding-user span {
+    font-weight: 600;
+    color: black
+}
+
+.announces, .trending {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     background-color: white;
     border-radius: 0.5rem;
